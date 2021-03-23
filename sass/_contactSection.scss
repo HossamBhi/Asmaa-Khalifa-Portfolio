@@ -1,0 +1,20 @@
+@import "_colors";
+
+//  contact section
+.contact-section {
+  padding-top: 23px;
+  .contact-info {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  img {
+    max-width: 40%;
+    margin-bottom: 25px;
+  }
+  .contact-mail {
+    display: block;
+    color: $primary3;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
