@@ -40,6 +40,9 @@
   padding: 6px 10px 29px 10px;
   padding-top: 6px;
   text-transform: uppercase;
+  a {
+    color: black;
+  }
 }
 .link-active {
   color: $primary1;
@@ -70,6 +73,9 @@
     font-size: 12px;
     line-height: 15px;
   }
+  .row-img {
+    width: 100%;
+  }
 }
 
 .detail-container-1 {
@@ -99,5 +105,49 @@
   }
   .detail-header {
     text-align: center;
+  }
+}
+
+.detail-container-4 {
+  padding: 20px;
+  .detail-left {
+    padding-bottom: 20px;
+  }
+}
+.detail-container-5 {
+  padding: 25px 20px;
+  background-color: $greyscale2;
+}
+
+.detail-container-6 {
+  padding: 20px 10px;
+  .detail-header {
+    padding-left: 4px;
+  }
+}
+
+.detail-container-7 {
+  padding: 20px 10px;
+  background-color: $greyscale2;
+  .detail-header {
+    padding-left: 4px;
+  }
+}
+
+
+.detail-container-8 {
+  padding: 20px;
+  .row-img {
+    padding-left: 4px;
+    padding-top: 14px;
+  }
+}
+
+
+.detail-container-9 {
+  padding: 20px 10px;
+  background-color: $greyscale2;
+  .detail-header {
+    padding-left: 4px;
   }
 }
