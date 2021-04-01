@@ -19,6 +19,7 @@
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
+  font-family: "vollkorn";
   &::before {
     content: "";
     position: absolute;
@@ -31,10 +32,6 @@
   }
 }
 
-.menu-icon {
-  visibility: hidden;
-}
-
 .links {
   font-size: 11px;
   padding: 6px 10px 29px 10px;
@@ -42,6 +39,7 @@
   text-transform: uppercase;
   a {
     color: black;
+    font-family: "Relaway";
   }
 }
 .link-active {
@@ -50,6 +48,8 @@
 
 // UX section
 .UX-section {
+  font-family: "Relaway";
+
   .UX-image {
     width: 100%;
     padding-left: 10px;
@@ -134,7 +134,6 @@
   }
 }
 
-
 .detail-container-8 {
   padding: 20px;
   .row-img {
@@ -142,7 +141,6 @@
     padding-top: 14px;
   }
 }
-
 
 .detail-container-9 {
   padding: 20px 10px;

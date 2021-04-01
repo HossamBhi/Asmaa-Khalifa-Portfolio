@@ -31,9 +31,9 @@
   }
 }
 
-.menu-icon {
-  visibility: hidden;
-}
+// .menu-icon {
+//   visibility: hidden;
+// }
 
 // Categories section
 .categories-section {
@@ -44,6 +44,7 @@
     padding-bottom: 29px;
     padding-top: 6px;
     text-transform: uppercase;
+    font-family: "Relaway";
   }
   .link-active {
     color: $primary1;
@@ -56,19 +57,45 @@
   .category-image {
     width: 100%;
   }
-  .category-title {
-    color: $primary3;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    font-size: 18px;
-  }
-  .category-link {
-    color: $primary1;
-    font-size: 14px;
-    font-weight: 600;
-  }
+  
+  // .category-link {
+  //   color: $primary1;
+  //   font-size: 14px;
+  //   font-weight: 600;
+  // }
 }
 
 .contact-section {
   background-color: #f6f9f8;
+}
+
+@media (min-width: 961px) {
+  .section-title {
+    font-family: "Vollkorn";
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 42px;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+  }
+  .categories-section {
+    width: 95%;
+    margin: 0 auto;
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .category {
+      width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .contact-section {
+    background-color: #f6f9f8;
+    padding-top: 88px;
+    padding-bottom: 48px;
+  }
 }

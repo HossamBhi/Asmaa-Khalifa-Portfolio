@@ -9,7 +9,7 @@
 }
 
 .section-title {
-  padding-bottom: 21px;
+  padding-bottom: 18px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
@@ -19,6 +19,7 @@
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
+  font-family: "vollkorn";
   &::before {
     content: "";
     position: absolute;
@@ -46,6 +47,10 @@
   .home-header {
     font-size: 21px;
     color: $primary3;
+    font-family: "Vollkorn";
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 29px;
   }
   .home-p {
     font-size: 12px;
@@ -54,10 +59,11 @@
     border-bottom: 1px solid #979797;
     padding-top: 9px;
     padding-bottom: 9px;
-    margin-top: 20px;
+    margin-top: 9px;
     margin-bottom: 20px;
     padding-left: 2px;
     padding-right: 2px;
+    font-family: "Vollkorn";
   }
   .get-in-touch-btn {
     background-color: $primary1;
@@ -70,6 +76,7 @@
     a {
       color: $primary2 !important;
       text-decoration: none;
+      font-family: "Relaway";
     }
   }
   .links {
@@ -98,8 +105,11 @@
   .category-title {
     color: $primary3;
     padding-top: 11px;
-    padding-bottom: 11px;
+    padding-bottom: 5px;
     font-size: 18px;
+    font-family: "Relaway";
+    letter-spacing: 0;
+    line-height: 25px;
   }
   .category-link {
     color: $primary1;
@@ -107,70 +117,40 @@
     font-weight: 600;
   }
 }
-// about me
-.about-me {
-  .about-text {
-    padding: 22px 20px 40px 20px;
-    background-color: #f6f9f8;
-    box-shadow: 0 1px 5px 1px rgba(17, 15, 15, 0.29);
-    p {
-      color: #575656;
-      font-size: 12px;
-      letter-spacing: 0;
-      line-height: 15px;
-      text-align: center;
+
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  .section-title {
+    font-size: 30px;
+    // line-height: 42px;
+  }
+
+  // Categories section
+  .categories-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    .categories-top {
+      padding-top: 35px;
+      padding-bottom: 50px;
     }
-  }
-}
-.education {
-  padding-top: 25px;
-  padding-bottom: 20px;
-  background-color: #ebebeb;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.45);
-  padding-right: 20px;
-  .list-container {
-    display: flex;
-    flex-direction: row;
-  }
-  .list-line {
-    margin-left: 40px;
-    width: 10px;
-    background-color: $primary1;
-    margin-bottom: 20%;
-  }
-  .education-list {
-    margin-left: 26px;
-    margin-right: 20px;
-    margin-top: 10px;
-  }
-  .education-item {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-    padding: 22px 20px 18px 20px;
-    margin-bottom: 60px;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      left: -48px;
-      top: 4px;
-      width: 42px;
-      height: 42px;
-      background-image: url("/img/check\ mark.png");
-      z-index: 10;
-      background-position: center;
-      background-size: cover;
+    .categories-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      .category {
+        width: (100% / 3.2);
+      }
+      .category-image {
+        max-height: 400px;
+        height: 200px;
+      }
     }
-    &:last-child {
-      margin-bottom: 20px;
+    .category {
+      // width: 100%;
+      margin-bottom: 0px;
+      // padding-bottom: 14px;
     }
-  }
-  .education-header {
-    color: $primary3;
-    font-size: 14px;
-  }
-  .education-note {
-    color: $primary3;
-    font-size: 12px;
-    margin-top: 10px;
   }
 }

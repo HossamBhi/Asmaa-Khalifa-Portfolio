@@ -1,4 +1,6 @@
 @import "_colors";
+@import "_fontSize";
+@import "_global";
 
 ul {
   list-style: none;
@@ -12,9 +14,11 @@ nav {
   overflow-y: hidden;
   z-index: 999;
 }
+
 .noscroll {
   overflow: hidden;
 }
+
 .navbar {
   background-color: #303941;
   padding-top: 11px;
@@ -42,7 +46,6 @@ nav {
   }
 }
 .navbar-content {
-  //   display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,17 +63,16 @@ nav {
   top: 15px;
   left: 20px;
   font-size: 30px;
-  //   width: 50px;
-  //   height: 50px;
   color: #979797;
 }
 .menu-item {
   margin-bottom: 30px;
 }
 .menu-link {
-  color: #dcd9d9 !important;
-  font-size: 18px;
+  color: #dcd9d9 ;
+  font-size: $px18;
   font-weight: 600;
+  font-family: "Raleway";
 }
 .item-active {
   .menu-link {
@@ -79,4 +81,68 @@ nav {
 }
 .hide {
   display: none;
+}
+
+// laptop
+@media (min-width: 961px) {
+  nav {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-logo {
+    width: 50%;
+    text-align: start;
+    padding: 8px 30px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .navbar-content {
+    display: inline;
+    position: relative;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .close-nav {
+    display: none;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+  }
+  .menu-item {
+  margin-bottom: 0px;
+  }
+  .menu-link {
+    color: #706f6f;
+    font-size: 16px;
+  }
+
+  .item-active {
+    position: relative;
+    .menu-link {
+      color: $primary1 !important;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 3px;
+      background-color: $primary1;
+      width: 100%;
+    }
+  }
 }
