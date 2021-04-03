@@ -34,9 +34,12 @@
 
 // Home section
 .home-section {
-  padding-top: 6px;
   padding-inline-start: 10px;
   padding-bottom: 80px;
+  padding-top: 46px;
+  .home-right {
+    display: none;
+  }
   .home-left {
     display: flex;
     justify-content: center;
@@ -79,14 +82,26 @@
       font-family: "Relaway";
     }
   }
-  .links {
-    color: $primary3;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding-bottom: 40px;
-  }
+  // .links {
+  //   color: $primary3;
+  //   font-size: 11px;
+  //   text-transform: uppercase;
+  //   padding-bottom: 40px;
+  // }
 }
 
+#img1 {
+  background-image: url("../img/ui\ design\ mobile.png");
+}
+#img2 {
+  background-image: url("../img/portfolio\ page.png");
+}
+#img3 {
+  background-image: url("../img/UX\ DESIGN\ CARD\ 1.png");
+}
+#img4 {
+  background-image: url("../img/GRAPHICV\ DESIGN\ COVER.png");
+}
 // Categories section
 .categories-section {
   padding-left: 10px;
@@ -101,6 +116,10 @@
   }
   .category-image {
     width: 100%;
+    min-height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .category-title {
     color: $primary3;
@@ -123,16 +142,68 @@
 
   .section-title {
     font-size: 30px;
-    // line-height: 42px;
+  }
+  nav {
+    // display: none;
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    top: -100px;
+  }
+  #content {
+    padding-top: 0;
+  }
+  // home section
+  .home-section {
+    padding: 0px;
+    .home-inside {
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: -5px 3px 5px 2px rgba(0, 0, 0, 0.45);
+    }
+    .home-right {
+      display: block;
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .home-left {
+      width: 50%;
+    }
+    .home-header {
+      font-size: 48px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 67px;
+    }
+    .home-p {
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .get-in-touch-btn {
+      a {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 17px;
+      }
+    }
   }
 
   // Categories section
   .categories-section {
-    padding-left: 100px;
-    padding-right: 100px;
+    // padding-left: 100px;
+    // padding-right: 100px;
+    padding-top: 60px;
+    width: 95%;
+    margin: 0 auto;
     .categories-top {
       padding-top: 35px;
       padding-bottom: 50px;
+      .category-image {
+        min-height: 400px;
+      }
     }
     .categories-bottom {
       display: flex;
@@ -142,15 +213,36 @@
       .category {
         width: (100% / 3.2);
       }
-      .category-image {
-        max-height: 400px;
-        height: 200px;
-      }
     }
     .category {
       // width: 100%;
       margin-bottom: 0px;
       // padding-bottom: 14px;
     }
+    .category-image {
+      max-height: 400px;
+      min-height: 350px;
+    }
+  }
+
+  #img1 {
+    background-image: url("../img/UI\ Design\ portfolio\ card.png");
+  }
+
+  #img2 {
+    background-image: url("../img/portfolio\ page.png");
+  }
+  #img3 {
+    background-image: url("../img/UX\ DESIGN\ laptop.png");
+  }
+  #img4 {
+    background-image: url("../img/UX\ DESIGN\ COVER.png");
+  }
+
+  .contact-section {
+    background-color: #ebebeb;
+    box-shadow: 0 2px 5px 1px rgba(17, 15, 15, 0.45);
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 }
